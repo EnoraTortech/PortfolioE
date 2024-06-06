@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-----------------lien bootstrap--------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <!----------------------------------->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="unitegallery/js/unitegallery.min.js"></script>
+
+    <link rel="stylesheet" href="unitegallery/css/unite-gallery.css" type="text/css" />
+    <script type="text/javascript" src="unitegallery/themes/default/ug-theme-default.js"></script>
+    <link rel="stylesheet" href="unitegallery/themes/default/ug-theme-default.css" type="text/css" />
+    <!--------------------------------------------------->
+    <link rel="stylesheet" href="style.css" />
+    <title>Static Template</title>
+</head>
+
+<body>
+    <!-----------------script bootstrap--------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!--------------------------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img id="logo" src="img/logo.png" alt="" />
+                </a>
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+                <div class="collapse navbar-collapse w-100 text-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav justify-content-end w-100">
+                        <a class="nav-link text-light" href="index.html">Accueil</a>
+                        <a class="nav-link text-light" href="#">Galerie</a>
+                        <a class="nav-link text-light" href="#">Projets personnels</a>
+                        <a class="nav-link text-light" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!----------------------page de garde----------------------------->
+    <section class="canvas-wrap">
+        <div class="canvas-content">
+            <h1>Ressources</h1>
+        </div>
+        <div id="canvas" class="gradient"></div>
+    </section>
+    <!-- Main library -->
+    <script src="js/three.min.js"></script>
+
+    <!-- Helpers -->
+    <script src="js/projector.js"></script>
+    <script src="js/canvas-renderer.js"></script>
+
+    <!-- Visualitzation adjustments -->
+    <script src="js/3d-lines-animation.js"></script>
+
+    <!----------------------tableau des compétence----------------------------->
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Ressources</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Niveau</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">R4.01</th>
+                <td>Anglais</td>
+                <td>
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">R4.02</th>
+                <td>Economie, gestion et Droit du numérique</td>
+                <td>
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">R4.03</th>
+                <td>Design d’expérience</td>
+                <td>
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">R4.04</th>
+                <td>Expression, communication</td>
+                <td>
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">R4.05</th>
+                <td>Gestion de contenus spécialisée</td>
+                <td>
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">R4.06</th>
+                <td>Culture artistique</td>
+                <td>
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">R4.07</th>
+                <td>Audiovisuel - Motion design</td>
+                <td>
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">R4.08</th>
+                <td>Écriture Multimédia et narration</td>
+                <td>
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">SAÉ 4.01</th>
+                <td>Créer pour une campagne de communication visuelle</td>
+                <td>
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">SAÉ 4.02</th>
+                <td>Produire du contenue multimédia</td>
+                <td>
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">PORTFOLIO</th>
+                <td>Démarche Portfolio</td>
+                <td>
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/star.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                    <img src="img/starV.png" alt="" class="imgLvl">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!----------------------partie footer---------------------------->
+    <footer>
+        <p>Retrouvez-moi sur:</p>
+        <a href="https://www.instagram.com/erza_wood/" class="link">
+            <img src="img/insta.webp" alt="" />
+        </a>
+
+    </footer>
+
+</body>
+
+</html>

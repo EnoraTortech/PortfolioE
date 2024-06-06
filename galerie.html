@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-----------------lien bootstrap--------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!----------------------------------->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="unitegallery/js/unitegallery.min.js"></script>
+
+  <link rel="stylesheet" href="unitegallery/css/unite-gallery.css" type="text/css" />
+  <script type="text/javascript" src="unitegallery/themes/default/ug-theme-default.js"></script>
+  <link rel="stylesheet" href="unitegallery/themes/default/ug-theme-default.css" type="text/css" />
+  <!--------------------------------------------------->
+  <link rel="stylesheet" href="style.css" />
+  <title>Static Template</title>
+</head>
+
+<body>
+  <!-----------------script bootstrap--------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!--------------------------------------------------->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img id="logo" src="img/logo.png" alt="" />
+        </a>
+        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-light"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100 text-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav justify-content-end w-100">
+            <a class="nav-link text-light" href="index.html">Accueil</a>
+            <a class="nav-link text-light" href="#">Galerie</a>
+            <a class="nav-link text-light" href="#">Projets personnels</a>
+            <a class="nav-link text-light" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!----------------------page de garde----------------------------->
+  <section class="canvas-wrap">
+    <div class="canvas-content">
+      <h1>Galerie</h1>
+    </div>
+    <div id="canvas" class="gradient"></div>
+  </section>
+  <!-- Main library -->
+  <script src="js/three.min.js"></script>
+
+  <!-- Helpers -->
+  <script src="js/projector.js"></script>
+  <script src="js/canvas-renderer.js"></script>
+
+  <!-- Visualitzation adjustments -->
+  <script src="js/3d-lines-animation.js"></script>
+  <!----------------------partie de img-----------------------------
+    <div class="gallery">
+      <div class="gallery__column">
+        <a
+          href="https://unsplash.com/@jeka_fe"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="https://source.unsplash.com/_cvwXhGqG-o/300x300"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">
+              Portrait by Jessica Felicio
+            </figcaption>
+          </figure>
+        </a>
+
+        <a
+          href="https://unsplash.com/@oladimeg"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="https://source.unsplash.com/AHBvAIVqk64/300x500"
+              alt="Portrait by Oladimeji Odunsi"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">
+              Portrait by Oladimeji Odunsi
+            </figcaption>
+          </figure>
+        </a>
+
+        <a
+          href="https://unsplash.com/@a2eorigins"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="https://source.unsplash.com/VLPLo-GtrIE/300x300"
+              alt="Portrait by Alex Perez"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">
+              Portrait by Alex Perez
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <div class="gallery__column">
+        <a
+          href="https://unsplash.com/@hikiapp"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="https://source.unsplash.com/A9rQeI2AdR4/300x300"
+              alt="Portrait by Hikiapp"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">
+              Portrait by Hikiapp
+            </figcaption>
+          </figure>
+        </a>
+
+        <a
+          href="https://unsplash.com/@von_co"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="https://source.unsplash.com/dnL6ZIpht2s/300x300"
+              alt="Portrait by Ivana Cajina"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">
+              Portrait by Ivana Cajina
+            </figcaption>
+          </figure>
+        </a>
+
+        <a
+          href="https://unsplash.com/@j_erhunse"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="https://source.unsplash.com/vp9mRauo68c/300x500"
+              alt="Portrait by Jeffery Erhunse"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">
+              Portrait by Jeffery Erhunse
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <div class="gallery__column">
+        <a
+          href="https://unsplash.com/@marilezhava"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="https://source.unsplash.com/Xm9-vA_bhm0/300x500"
+              alt="Portrait by Mari Lezhava"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">
+              Portrait by Mari Lezhava
+            </figcaption>
+          </figure>
+        </a>
+
+        <a
+          href="https://unsplash.com/@ethanhaddox"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="https://source.unsplash.com/NTjSR3zYpsY/300x300"
+              alt="Portrait by Ethan Haddox"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">
+              Portrait by Ethan Haddox
+            </figcaption>
+          </figure>
+        </a>
+
+        <a
+          href="https://unsplash.com/@mr_geshani"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="https://source.unsplash.com/2JH8d3ChNec/300x300"
+              alt="Portrait by Amir Geshani"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">
+              Portrait by Amir Geshani
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <div class="gallery__column">
+        <a
+          href="https://unsplash.com/@nixcreative"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="https://source.unsplash.com/sh3LSNbyj7k/300x300"
+              alt="Portrait by Tyler Nix"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">
+              Portrait by Tyler Nix
+            </figcaption>
+          </figure>
+        </a>
+
+        <a
+          href="https://unsplash.com/@majestical_jasmin"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="https://source.unsplash.com/OQd9zONSx7s/300x300"
+              alt="Portrait by Jasmin Chew"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">
+              Portrait by Jasmin Chew
+            </figcaption>
+          </figure>
+        </a>
+
+        <a
+          href="https://unsplash.com/@dimadallacqua"
+          target="_blank"
+          class="gallery__link"
+        >
+          <figure class="gallery__thumb">
+            <img
+              src="https://source.unsplash.com/XZkEhowjx8k/300x500"
+              alt="Portrait by Dima DallAcqua"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">
+              Portrait by Dima DallAcqua
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>-->
+  <div class="d-flex justify-content-center align-items-center w-100 mt-5">
+    <ul>
+      <li>
+        <a href="">
+          <figure>
+            <img
+              src='https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA0OTI3Nw&ixlib=rb-1.2.1&q=80&w=400'
+              alt='Volcano and lava field against a stormy sky'>
+            <figcaption>Mountains and volcanos</figcaption>
+          </figure>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <figure>
+            <img
+              src='https://images.unsplash.com/photo-1633621533308-8760aefb5521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjAyMQ&ixlib=rb-1.2.1&q=80&w=400'
+              alt='Guy on a bike ok a wooden bridge with a forest backdrop'>
+            <figcaption>Adventure getaways</figcaption>
+          </figure>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <figure>
+            <img
+              src='https://images.unsplash.com/photo-1633635146842-12d386e64058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400'
+              alt='Person standing alone in a misty forest'>
+            <figcaption>Forest escapes</figcaption>
+          </figure>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <figure>
+            <img
+              src='https://images.unsplash.com/photo-1568444438385-ece31a33ce78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400'
+              alt='Person hiking on a trail through mountains while taking a photo with phone'>
+            <figcaption>Hiking trails</figcaption>
+          </figure>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <figure>
+            <img
+              src='https://images.unsplash.com/photo-1633515257379-5fda985bd57a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400'
+              alt='Street scene with person walking and others on motorbikes, all wearing masks'>
+            <figcaption>Street scenes</figcaption>
+          </figure>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <figure>
+            <img
+              src='https://images.unsplash.com/photo-1633209931146-260ce0d16e22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400'
+              alt='Fashionable-looking girl with blond hair and pink sunglasses'>
+            <figcaption>Trending</figcaption>
+          </figure>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!----------------------partie footer---------------------------->
+  <footer>
+    <p>Retrouvez-moi sur:</p>
+    <a href="https://www.instagram.com/erza_wood/" class="link">
+      <img src="img/insta.webp" alt="" />
+    </a>
+
+  </footer>
+
+</body>
+
+</html>

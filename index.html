@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-----------------lien bootstrap--------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!--------------------------------------------------->
+
+  <!--------------------------------------------------->
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-----------------script bootstrap--------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!--------------------------------------------------->
+  <header>
+    <nav class="navbar navbar-expand-lg z-3 position-fixed w-100 ">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img id="logo" src="img/logoV2.png" alt="" />
+        </a>
+        <button class="navbar-toggler text-success" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span id="menu" style="font-size: 2rem; color: cornflowerblue;" class="navbar-toggler-icon"></span>
+          <svg class="navbar-toggler-icon text-success" style="color: white !important;" width="32" height="32"
+            fill="white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse w-100 text-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav justify-content-end w-100">
+            <a class="nav-link text-light" href="#">Accueil</a>
+            <a class="nav-link text-light" href="galerie.html">Galerie</a>
+            <a class="nav-link text-light" href="#">Projets personnels</a>
+            <a class="nav-link text-light" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!----------------------page de garde----------------------------->
+  <section class="canvas-wrap">
+    <div class="canvas-content">
+      <h1>Portfolio</h1>
+    </div>
+    <div id="canvas" class="gradient"></div>
+  </section>
+  <!-- Main library -->
+  <script src="js/three.min.js"></script>
+
+  <!-- Helpers -->
+  <script src="js/projector.js"></script>
+  <script src="js/canvas-renderer.js"></script>
+
+  <!-- Visualitzation adjustments -->
+  <script src="js/3d-lines-animation.js"></script>
+
+  <!----------------------page de présentation----------------------------->
+  <div class="page" id="presentation">
+    <!---------logo/ partie gauche---------->
+    <div class="logo">
+      <img src="img/logoV2B.png" alt="" class="logo" />
+    </div>
+    <!---------présentation/partie droite--->
+    <div class="presentation">
+      <p>
+        Bonjour, je suis actuellement en formation dans le domaine du multimédia, avec une ambition claire et passionnée
+        de devenir webdesigner. Mon parcours éducatif et mes expériences pratiques m'ont permis d'acquérir des
+        compétences solides et diversifiées dans le domaine du design et de la création web.
+        <br><br>
+        Mon objectif est de devenir un webdesigner accompli, capable de transformer des idées créatives en expériences
+        numériques captivantes. Je suis particulièrement intéressé par la création de sites web qui non seulement sont
+        esthétiquement plaisants mais qui offrent également une expérience utilisateur exceptionnelle.
+        <br><br>
+        Je suis passionné par l'idée de combiner esthétique et fonctionnalité dans mes créations. Mon approche est
+        centrée sur l'utilisateur, et je m'efforce toujours de comprendre les besoins et les attentes de mes clients
+        pour créer des solutions sur mesure. Mon souci du détail, mon sens de la créativité et ma capacité à travailler
+        en équipe font de moi un candidat idéal pour tout projet de webdesign.
+      </p>
+    </div>
+  </div>
+  <!----------------------page des compétence----------------------------->
+  <div class="carousel-container" id="competences">
+    <div class="controls">
+      <button class="control-button">Graphisme</button>
+      <button class="control-button">Webdesign</button>
+      <button class="control-button">Audio visuel</button>
+      <button class="control-button">Personnel</button>
+    </div>
+
+    <div class="carousel">
+      <div class="slide">
+        <div class="categorie">
+          <h1>Graphisme</h1>
+          <div class="surDiv">
+            <div class="competence">
+              <p>Photoshop</p>
+              <div class="barre">
+                <div style="width: 60%;">
+                  <div class="progress"></div>
+                </div>
+              </div>
+            </div>
+            <div class="competence">
+              <p>Illustrator</p>
+              <div class="barre">
+                <div style="width: 60%;">
+                  <div class="progress"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <Button class="buttonCap" role="button"><a href="competence.html">Compétences</a></Button>
+          </div>
+
+        </div>
+        <div class="production">
+          <div class="productionI">
+            <img src="img/Logo_RVB.png" alt="" />
+            <img src="img/Logo_RVB.png" alt="" />
+            <img src="img/Logo_RVB.png" alt="" />
+            <img src="img/Logo_RVB.png" alt="" />
+
+          </div>
+          <!--
+                
+              -->
+
+          <Button class="button-74" role="button"><a href="galerie.html">En voir plus</a></Button>
+        </div>
+
+      </div>
+    </div>
+    <!------------WEB------------------>
+    <div class="slide">
+      <div class="categorie">
+        <h1>Webdesign</h1>
+        <div class="surDiv">
+          <div class="competence">
+            <p>HMLT-CSS</p>
+            <div class="barre">
+              <div style="width: 75%;">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
+          <div class="competence">
+            <p>CMS</p>
+            <div class="barre">
+              <div style="width: 60%;">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
+          <div class="competence">
+            <p>PHP</p>
+            <div class="barre">
+              <div style="width: 50%;">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
+          <div class="competence">
+            <p>Java Script</p>
+            <div class="barre">
+              <div style="width: 60%;">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+          <Button class="buttonCap" role="button"><a href="competence.html">Compétences</a></Button>
+        </div>
+
+      </div>
+      <div class="production">
+        <div class="productionI">
+          <img src="img/Logo_RVB.png" alt="" />
+          <img src="img/Logo_RVB.png" alt="" />
+          <img src="img/Logo_RVB.png" alt="" />
+          <img src="img/Logo_RVB.png" alt="" />
+
+        </div>
+        <!--
+                
+              -->
+
+        <Button class="button-74" role="button"><a href="galerie.html">En voir plus</a></Button>
+      </div>
+
+    </div>
+
+    <!------------audio visuel------------------>
+    <div class="slide">
+      <div class="categorie">
+        <h1>Audio visuel</h1>
+        <div class="surDiv">
+          <div class="competence">
+            <p>Premiere pro</p>
+            <div class="barre">
+              <div style="width: 50%;">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
+          <div class="competence">
+            <p>Photographie</p>
+            <div class="barre">
+              <div style="width: 50%;">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+          <Button class="buttonCap" role="button"><a>Compétences</a></Button>
+        </div>
+      </div>
+      <div class="production">
+        <div class="productionI">
+          <img src="img/Logo_RVB.png" alt="" />
+          <img src="img/Logo_RVB.png" alt="" />
+          <img src="img/Logo_RVB.png" alt="" />
+          <img src="img/Logo_RVB.png" alt="" />
+
+        </div>
+        <!--
+                
+              -->
+
+        <Button class="button-74" role="button">En voir plus</Button>
+      </div>
+
+    </div>
+    <!------------personnel------------------>
+    <div class="slide">
+      <div class="categorie">
+        <h1>Personnel</h1>
+        <div class="surDiv">
+          <div class="competence">
+            <p>Dessin</p>
+            <div class="barre">
+              <div style="width: 50%;">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <Button class="buttonCap" role="button"><a>Compétences</a></Button>
+        </div>
+      </div>
+      <div class="production">
+        <div class="productionI">
+          <img src="img/Logo_RVB.png" alt="" />
+          <img src="img/Logo_RVB.png" alt="" />
+          <img src="img/Logo_RVB.png" alt="" />
+          <img src="img/Logo_RVB.png" alt="" />
+
+        </div>
+        <!--
+                
+              -->
+
+        <Button class="button-74" role="button">En voir plus</Button>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <script src="carousel.js"></script>
+  <script src="scroll.js"></script>
+
+  <!----------------------partie footer---------------------------->
+  <footer>
+    <p>Retrouvez-moi sur:</p>
+    <a href="https://www.instagram.com/erza_wood/" class="link">
+      <img src="img/insta.webp" alt="" />
+    </a>
+
+  </footer>
+
+</body>
+
+</html>
